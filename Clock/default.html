@@ -1,0 +1,469 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Clock</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0.RC/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0.RC/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0.RC/js/ui.js"></script>
+
+    <!-- App1 references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/css/clock.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="/js/common.js"></script>
+</head>
+<body>
+    <p id="clock"></p>
+    <table>
+        <tr>
+            <td>C</td>
+            <td class="it">I</td>
+            <td class="it">T</td>
+            <td>P</td>
+            <td class="is">I</td>
+            <td class="is">S</td>
+            <td>U</td>
+            <td>M</td>
+            <td>D</td>
+            <td>O</td>
+            <td>L</td>
+            <td>O</td>
+            <td>R</td>
+            <td>S</td>
+            <td class="five-minute">F</td>
+            <td class="five-minute">I</td>
+            <td class="five-minute">V</td>
+            <td class="five-minute">E</td>
+            <td>T</td>
+            <td>I</td>
+            <td>S</td>
+            <td>A</td>
+            <td>M</td>
+            <td>E</td>
+            <td>T</td>
+            <td>C</td>
+            <td>O</td>
+            <td>N</td>
+            <td>S</td>
+            <td>E</td>
+            <td>T</td>
+            <td>E</td>
+            <td>T</td>
+            <td>U</td>
+            <td>R</td>
+        </tr>
+        <tr>
+            <td>S</td>
+            <td>C</td>
+            <td>I</td>
+            <td  class="ten-minute">T</td>
+            <td  class="ten-minute">E</td>
+            <td  class="ten-minute">N</td>
+            <td>G</td>
+            <td>E</td>
+            <td>L</td>
+            <td>I</td>
+            <td>T</td>
+            <td  class="a">A</td>
+            <td>R</td>
+            <td class="quarter">Q</td>
+            <td class="quarter">U</td>
+            <td class="quarter">A</td>
+            <td class="quarter">R</td>
+            <td class="quarter">T</td>
+            <td class="quarter">E</td>
+            <td class="quarter">R</td>
+            <td>S</td>
+            <td>E</td>
+            <td>D</td>
+            <td>D</td>
+            <td>I</td>
+            <td>A</td>
+            <td>M</td>
+            <td>N</td>
+            <td class="twenty">T</td>
+            <td class="twenty">W</td>
+            <td class="twenty">E</td>
+            <td class="twenty">N</td>
+            <td class="twenty">T</td>
+            <td class="twenty">Y</td>
+            <td>O</td>      
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>R</td>
+            <td>M</td>
+            <td>O</td>
+            <td>D</td>
+            <td class="twentyfive">T</td>
+            <td class="twentyfive">W</td>
+            <td class="twentyfive">E</td>
+            <td class="twentyfive">N</td>
+            <td class="twentyfive">T</td>
+            <td class="twentyfive">Y</td>
+            <td>T</td>
+            <td class="twentyfive">F</td>
+            <td class="twentyfive">I</td>
+            <td class="twentyfive">V</td>
+            <td class="twentyfive">E</td>
+            <td>M</td>
+            <td>P</td>
+            <td>O</td>
+            <td>R</td>
+            <td>I</td>
+            <td>N</td>
+            <td>V</td>
+            <td>I</td>
+            <td>D</td>
+            <td>U</td>
+            <td>N</td>
+            <td>T</td>
+            <td>U</td>
+            <td>T</td>
+            <td>L</td>
+            <td>A</td>
+            <td>B</td>
+            <td>T</td>
+            <td>W</td>       
+        </tr>
+        <tr>
+            <td>O</td>
+            <td>R</td>
+            <td>E</td>
+            <td>E</td>
+            <td>T</td>
+            <td class="half">H</td>
+            <td class="half">A</td>
+            <td class="half">L</td>
+            <td class="half">F</td>
+            <td>D</td>
+            <td>O</td>
+            <td>L</td>
+            <td>O</td>
+            <td>R</td>
+            <td class="past">P</td>
+            <td class="past">A</td>
+            <td class="past">S</td>
+            <td class="past">T</td>
+            <td>E</td>
+            <td>M</td>
+            <td>A</td>
+            <td>G</td>
+            <td>N</td>
+            <td>A</td>
+            <td>A</td>
+            <td>L</td>
+            <td>I</td>
+            <td class="to">T</td>
+            <td class="to">O</td>
+            <td>Y</td>
+            <td>A</td>
+            <td>M</td>
+            <td>E</td>
+            <td>R</td>
+            <td>A</td>          
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>I</td>
+            <td>A</td>
+            <td>M</td>
+            <td>V</td>
+            <td class="one">O</td>
+            <td class="one">N</td>
+            <td class="one">E</td>
+            <td>L</td>
+            <td>U</td>
+            <td>P</td>
+            <td>T</td>
+            <td>U</td>
+            <td>A</td>
+            <td>A</td>
+            <td class="two">T</td>
+            <td class="two">W</td>
+            <td class="two">O</td>
+            <td>V</td>
+            <td>E</td>
+            <td>R</td>
+            <td>O</td>
+            <td>E</td>
+            <td>O</td>
+            <td>S</td>
+            <td>E</td>
+            <td class="three">T</td>
+            <td class="three">H</td>
+            <td class="three">R</td>
+            <td class="three">E</td>
+            <td class="three">E</td>
+            <td>A</td>
+            <td>C</td>
+            <td>C</td>
+            <td>U</td>            
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>T</td>
+            <td>J</td>
+            <td>U</td>
+            <td>S</td>
+            <td>T</td>
+            <td>O</td>
+            <td>D</td>
+            <td>U</td>
+            <td>O</td>
+            <td>D</td>
+            <td class="four">F</td>
+            <td class="four">O</td>
+            <td class="four">U</td>
+            <td class="four">R</td>
+            <td>L</td>
+            <td>O</td>
+            <td>R</td>
+            <td>E</td>
+            <td>S</td>
+            <td>E</td>
+            <td>T</td>
+            <td>A</td>
+            <td>E</td>
+            <td>R</td>
+            <td>E</td>
+            <td>B</td>
+            <td>U</td>
+            <td class="five">F</td>
+            <td class="five">I</td>
+            <td class="five">V</td>
+            <td class="five">E</td>
+            <td>M</td>
+            <td>S</td>
+            <td>T</td>           
+        </tr>
+        <tr>
+            <td>T</td>
+            <td>A</td>
+            <td>K</td>
+            <td>A</td>
+            <td class="six">S</td>
+            <td class="six">I</td>
+            <td class="six">X</td>
+            <td>D</td>
+            <td>G</td>
+            <td>U</td>
+            <td>B</td>
+            <td>E</td>
+            <td>R</td>
+            <td>G</td>
+            <td>R</td>
+            <td>E</td>
+            <td>N</td>
+            <td>N</td>
+            <td>O</td>
+            <td class="seven">S</td>
+            <td class="seven">E</td>
+            <td class="seven">V</td>
+            <td class="seven">E</td>
+            <td class="seven">N</td>
+            <td>A</td>
+            <td>T</td>
+            <td>A</td>
+            <td>K</td>
+            <td>I</td>
+            <td>M</td>
+            <td>A</td>
+            <td>T</td>
+            <td>A</td>
+            <td>S</td>
+            <td>A</td>           
+        </tr>
+        <tr>
+            <td>T</td>
+            <td>C</td>
+            <td>T</td>
+            <td>U</td>
+            <td>S</td>
+            <td class="eight">E</td>
+            <td class="eight">I</td>
+            <td class="eight">G</td>
+            <td class="eight">H</td>
+            <td class="eight">T</td>
+            <td>S</td>
+            <td>T</td>
+            <td>L</td>
+            <td>O</td>
+            <td>R</td>
+            <td>E</td>
+            <td>M</td>
+            <td>I</td>
+            <td>P</td>
+            <td>S</td>
+            <td>U</td>
+            <td>M</td>
+            <td class="nine">N</td>
+            <td class="nine">I</td>
+            <td class="nine">N</td>
+            <td class="nine">E</td>
+            <td>D</td>
+            <td>O</td>
+            <td>L</td>
+            <td>O</td>
+            <td>R</td>
+            <td>S</td>
+            <td>I</td>
+            <td>T</td>
+            <td>A</td>
+            
+        </tr>      
+        <tr>
+            <td>R</td>
+            <td class="ten">T</td>
+            <td class="ten">E</td>
+            <td class="ten">N</td>
+            <td>M</td>
+            <td>I</td>
+            <td>P</td>
+            <td>S</td>
+            <td>U</td>
+            <td>M</td>
+            <td>D</td>
+            <td>O</td>
+            <td>L</td>
+            <td>O</td>
+            <td>R</td>
+            <td>S</td>
+            <td>I</td>
+            <td>T</td>
+            <td>A</td>
+            <td>M</td>
+            <td class="eleven">E</td>
+            <td class="eleven">L</td>
+            <td class="eleven">E</td>
+            <td class="eleven">V</td>
+            <td class="eleven">E</td>
+            <td class="eleven">N</td>
+            <td>T</td>
+            <td>C</td>
+            <td>O</td>
+            <td>N</td>
+            <td>S</td>
+            <td>E</td>
+            <td>T</td>
+            <td>E</td>
+            <td>T</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>I</td>
+            <td>P</td>
+            <td>S</td>
+            <td>C</td>
+            <td>I</td>
+            <td>N</td>
+            <td>G</td>
+            <td>E</td>
+            <td>L</td>
+            <td>I</td>
+            <td class="twelve">T</td>
+            <td class="twelve">W</td>
+            <td class="twelve">E</td>
+            <td class="twelve">L</td>
+            <td class="twelve">V</td>
+            <td class="twelve">E</td>
+            <td>R</td>
+            <td>S</td>
+            <td>E</td>
+            <td>D</td>
+            <td>D</td>
+            <td>I</td>
+            <td>A</td>
+            <td>M</td>
+            <td>N</td>
+            <td>O</td>
+            <td>N</td>
+            <td>U</td>
+            <td>M</td>
+            <td>Y</td>
+            <td>E</td>
+            <td>I</td>
+            <td>R</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>P</td>
+            <td>O</td>
+            <td>R</td>
+            <td>I</td>
+            <td>N</td>
+            <td>V</td>
+            <td>I</td>
+            <td>D</td>
+            <td>U</td>
+            <td>N</td>
+            <td>T</td>
+            <td>U</td>
+            <td>T</td>
+            <td>L</td>
+            <td>A</td>
+            <td>B</td>
+            <td class="o">O'</td>
+            <td>R</td>
+            <td class="clock">C</td>
+            <td class="clock">L</td>
+            <td class="clock">O</td>
+            <td class="clock">C</td>
+            <td class="clock">K</td>
+            <td>E</td>
+            <td>E</td>
+            <td>T</td>
+            <td>D</td>
+            <td>O</td>
+            <td>L</td>
+            <td>O</td>
+            <td>R</td>
+            <td>E</td>
+            <td>M</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>L</td>
+            <td>I</td>
+            <td>T</td>
+            <td>E</td>
+            <td>N</td>
+            <td>Q</td>
+            <td>U</td>
+            <td>Y</td>
+            <td>A</td>
+            <td>M</td>
+            <td>E</td>
+            <td>R</td>
+            <td>A</td>
+            <td>T</td>
+            <td>S</td>
+            <td>E</td>
+            <td>D</td>
+            <td>D</td>
+            <td>I</td>
+            <td>A</td>
+            <td>M</td>
+            <td>V</td>
+            <td>O</td>
+            <td>L</td>
+            <td>U</td>
+            <td>P</td>
+            <td>T</td>
+            <td>U</td>
+            <td>A</td>
+            <td>A</td>
+            <td>T</td>
+            <td>V</td>
+            <td>E</td>
+            <td>R</td>
+        </tr> 
+    </table>
+</body>
+</html>
+
