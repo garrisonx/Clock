@@ -1,12 +1,13 @@
 ﻿table {
-    margin-left:120px ;
-    margin-right:120px;
-    margin-bottom:150px;
-    margin-top:150px;
+    margin-left:10% ;    
+    margin-top:10%;
+    
     padding:10px 5px 0 5px;
     font-size:27px;
     color:#666666;
     text-align:center;
+    width:80%;
+    height:60%;
 }
 td {
     width:35px;
@@ -14,4 +15,16 @@ td {
 .active {
     font-size:27px;
     color:#fff;
+}
+#next-event {
+    position:absolute;
+    top:5%;
+    left:35%;
+    width:30%;
+    height:100px;
+    padding:15px;
+    border:1px solid #fff;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    -border-radius:5px;
 }

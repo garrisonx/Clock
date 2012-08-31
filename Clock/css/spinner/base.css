@@ -1,0 +1,66 @@
+﻿body{
+	background-color: #000;
+	color:#fff;	
+}
+
+#clock{
+	border: 1px solid #eee;
+	width:1200px;
+	height: 800px;
+	z-index: 0;
+}
+
+#itis{
+	position: absolute;
+	top:349px;
+	left: 20px;
+	z-index: 4;
+	background-color: blue;
+	width: 102px;
+	height: 22px;
+	background: url('../../images/Spinner/itis.png');
+}
+
+#hour{
+	position: absolute;
+	top:-545px;
+	left: -1000px;
+	z-index: 3;
+	background-color: red;
+	width: 1812px;
+	height: 1812px;
+	background: url('../../images/Spinner/hours.png') no-repeat;
+}
+
+#conector{
+	position: absolute;
+	top:-340px;
+	left: -810px;
+	z-index: 2;
+	background-color: yellow;
+	width: 1402px;
+	height: 1402px;
+	background: url('../../images/Spinner/topast.png') no-repeat;
+}
+
+#minutes{	
+	position: absolute;
+	top:-180px;
+	left: -600px;
+	z-index: 1;
+	background-color: green;
+	width: 1080px;
+	height: 1080px;
+	background: url('../../images/Spinner/minutes.png') no-repeat;
+}
+
+.activar{
+	position:absolute;
+	top:0px;
+	left:1500px;
+	color:#fff;
+	text-decoration: none;
+	height: 30px;
+	width:100px;
+	border:1px solid #eee;
+}

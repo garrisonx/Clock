@@ -4,6 +4,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Clock", "Clock\Clock.jsproj", "{220495FB-E65E-4996-861D-67EA818B152D}"
 EndProject
 Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccLocalPath0 = .
+		SccLocalPath1 = Clock
+		SccNumberOfProjects = 2
+		SccProjectName1 = Clock
+		SccProjectUniqueName1 = Clock\\Clock.jsproj
+		SccTeamFoundationServer = https://brickmakers.tfspreview.com/defaultcollection
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
 		Debug|Any CPU = Debug|Any CPU

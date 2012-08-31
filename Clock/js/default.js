@@ -15,39 +15,9 @@
                 // TODO: This application has been reactivated from suspension.
                 // Restore application state here.
             }            
-            args.setPromise(WinJS.UI.processAll().done(function () {                
-                FillClock();
-                //setInterval(function () { myTimer() }, 1000);
-                
-                //setInterval(function () {
-                //    var elements = WinJS.Utilities.query('.active');
-                //    elements.removeClass("active");
-                //    FillClock();
-                //}, 60000);
-                })
-            );
-        }
+            args.setPromise(WinJS.UI.processAll());
+        }        
     };
-
-    function myTimer() {
-        var d = new Date();
-        var t = d.toLocaleTimeString();
-        document.getElementById("clock").innerHTML = t;
-    }
-
-    function FillClock() {
-        
-            var me = Common || {};               
-            var segments = me.Operations.getTimeAsStringArray();
-            var x = 0;            
-
-            for (x;x<segments.length;x++)
-            {
-                var clase = "."+segments[x];
-                var elements = WinJS.Utilities.query(clase);
-                elements.addClass("active");
-            };
-        }
 
     app.oncheckpoint = function (args) {
         // TODO: This application is about to be suspended. Save any state
@@ -55,7 +25,8 @@
         // WinJS.Application.sessionState object, which is automatically
         // saved and restored across suspension. If you need to complete an
         // asynchronous operation before your application is suspended, call
-        // args.setPromise().
+        // args.setPromise().        
+        //WinJS.Application.sessionState.currentTime = new Date();
     };
 
     app.start();

@@ -36,6 +36,10 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>220495fb-e65e-4996-861d-67ea818b152d</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
@@ -51,15 +55,31 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <Content Include="css\clock.css" />
+    <Content Include="css\spinner\base.css" />
     <Content Include="default.html" />
-    <Content Include="html\savedClocks.html" />
+    <Content Include="html\spinner.html" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
+    <Content Include="images\Spinner\hours.png" />
+    <Content Include="images\Spinner\hours_black.png" />
+    <Content Include="images\Spinner\itis.png" />
+    <Content Include="images\Spinner\itis_black.png" />
+    <Content Include="images\Spinner\METROCLOCK.jpg" />
+    <Content Include="images\Spinner\minutes.png" />
+    <Content Include="images\Spinner\minutes_black.png" />
+    <Content Include="images\Spinner\oclock.png" />
+    <Content Include="images\Spinner\oclock_black.png" />
+    <Content Include="images\Spinner\topast.png" />
+    <Content Include="images\Spinner\topast_black.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
+    <Content Include="js\Appbar.js" />
     <Content Include="js\common.js" />
+    <Content Include="js\common.spinner.js" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
+    <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="js\rotate.js" />
     <None Include="Clock_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

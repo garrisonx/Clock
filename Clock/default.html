@@ -12,11 +12,15 @@
     <!-- App1 references -->
     <link href="/css/default.css" rel="stylesheet" />
     <link href="/css/clock.css" rel="stylesheet" />
+
+    <script src="/js/jquery-1.7.2.min.js"></script>
     <script src="/js/default.js"></script>
     <script src="/js/common.js"></script>
+    <script src="/js/Appbar.js"></script>
 </head>
 <body>
     <p id="clock"></p>
+    <div id="next-event"> Comming Events </div>
     <table>
         <tr>
             <td>C</td>
@@ -153,12 +157,12 @@
             <td>A</td>
             <td>G</td>
             <td>N</td>
-            <td>A</td>
-            <td>A</td>
-            <td>L</td>
-            <td>I</td>
-            <td class="to">T</td>
+            <td class="to">B</td>
+            <td class="to">E</td>
+            <td class="to">F</td>
             <td class="to">O</td>
+            <td class="to">R</td>
+            <td class="to">E</td>
             <td>Y</td>
             <td>A</td>
             <td>M</td>
@@ -464,6 +468,24 @@
             <td>R</td>
         </tr> 
     </table>
+
+    <div id="appBar" data-win-control="WinJS.UI.AppBar" data-win-options="">       
+        <hr 
+            data-win-control="WinJS.UI.AppBarCommand" 
+            data-win-options="{type:'separator',section:'global'}" />
+        <button 
+            data-win-control="WinJS.UI.AppBarCommand" 
+            data-win-options="{id:'cmdChangeView',label:'Change View',icon:'clock',
+                section:'global',tooltip:'Change View'}">
+        </button>
+        <button 
+            data-win-control="WinJS.UI.AppBarCommand" 
+            data-win-options="{id:'cmdSettings',label:'Settings',icon:'settings',
+                section:'selection',tooltip:'Configure Clock'}">
+        </button>
+    </div>
+    <!-- ENDTEMPLATE -->
+    <div id="statusMessage"></div>
 </body>
 </html>
 
